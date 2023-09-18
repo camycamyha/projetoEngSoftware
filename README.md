@@ -131,3 +131,7 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 ## Casos de Uso
 
 <img src="docs\usecase\use-cases.png" alt="Casos de uso">
+
+## Modelo Conceitual
+
+<img src="docs\modConceitual\Modelo Conceitual.png" alt="Casos de uso">

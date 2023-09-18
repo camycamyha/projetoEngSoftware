@@ -1,0 +1,61 @@
+@startuml "use-cases"
+
+left to right direction
+
+actor :Usuario: as Usuario
+
+actor :Cliente: as cli
+
+actor :Consultor: as con
+
+Usuario <|-- cli
+
+Usuario <|-- con
+
+package uHelp {
+
+    usecase "Solicitar consulta" as uc1 
+
+    usecase "Pesquisar tutorial" as uc2
+
+    usecase "Dar feedback" as uc3
+
+    usecase "Realizar pagamento" as uc4
+
+    usecase "Liberar consultoria" as uc5
+
+    usecase "Postar conteudo" as uc6
+
+    usecase "Disponibilizar Horario" as uc7
+
+    usecase "Cancelar/Reagendar consulta" as uc8
+
+    usecase "Consultar extrato" as uc9
+
+    usecase "Acessar estatisticas" as uc10
+
+  }
+
+  cli --> uc1
+
+  cli --> uc2   
+
+  cli --> uc3
+
+  (uc1) .> (uc4) : include
+
+  cli --> uc5
+
+  con --> uc5
+
+  con --> uc6
+
+  con --> uc7
+
+  con --> uc8
+
+  con --> uc9
+
+  con --> uc10
+
+@enduml

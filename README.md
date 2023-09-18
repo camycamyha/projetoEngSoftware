@@ -130,4 +130,4 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 
 ## Casos de Uso
 
-<img src="out\docs\usecase\use-cases.png" alt="Casos de uso">
+<img src="docs\usecase\use-cases.png" alt="Casos de uso">

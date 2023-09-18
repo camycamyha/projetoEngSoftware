@@ -127,3 +127,7 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 - Vídeos responsivos para se ajustarem automaticamente ao tamanho da tela, redimensionam-se conforme necessário para se encaixar na largura do contêiner em que estão incorporados.  
 
 - Chamada de vídeo pelo site para garantir a segurança tanto do usuário quanto do consultor.  
+
+## Casos de Uso
+
+<img src="out\docs\usecase\use-cases.png" alt="Casos de uso">

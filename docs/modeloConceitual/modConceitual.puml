@@ -1,0 +1,127 @@
+@startuml
+
+abstract class Usuario {
+
+    Id: Long
+
+    nome : String
+
+    email: String
+
+    datanasc: Date
+
+    senha: String
+
+ 
+
+}  
+
+ 
+
+class Consultor {
+
+    active: boolean
+
+    area: String
+
+    avaliacao: float    
+
+}
+
+ 
+
+class Cliente {
+
+    favoritos: String
+
+}
+
+ 
+
+ 
+
+'private or health insurance
+
+class Consultoria{
+
+    Id: Integer
+
+    data: Date
+
+    tempodeduracao: time
+
+}
+
+ 
+
+ 
+
+class Agenda {
+
+    Id: Long
+
+    dayWeek: DayOfWeek
+
+    startTime: LocalTime
+
+    endTime: LocalTime
+
+   
+
+}
+
+ 
+
+Class Categoria{
+
+    Id: Integer
+
+    nome: String
+
+}
+
+ 
+
+Class Conteudo{
+
+  tipo: String
+
+  Id: Integer
+
+  nome: String  
+
+}
+
+Class Feedback{
+
+    Id: String
+
+    tipo: String
+
+    avaliacao: float
+
+}
+
+ 
+
+ 
+
+Categoria -- Conteudo
+
+Conteudo -- Consultor
+
+Consultor --|> Usuario
+
+Usuario <|-- Cliente
+
+Cliente --Feedback
+
+Cliente -- Consultoria
+
+Consultoria -- Consultor
+
+Consultor -- Agenda
+
+@enduml
+
+ 

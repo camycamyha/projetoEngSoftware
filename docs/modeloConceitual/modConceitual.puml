@@ -61,16 +61,19 @@ class Consultoria{
  
 
  class PagamentoConsultoria {
+  
+   id : Integer
 
+   FormaDePagamento: String
 
+   DataPagamento: Date
 }
 
+class PrecoConsultoria{
 
-class PrecoConsultoria {
-    
+   PrecoConsultoria : float
 
 }
-
  
 
 class Agenda {
@@ -143,6 +146,13 @@ Cliente -- Consultoria
 Consultoria -- Consultor
 
 Consultor -- Agenda
+
+PagamentoConsultoria -- Consultoria
+
+PrecoConsultoria -- Consultoria
+
+Consultor -- PrecoConsultoria
+
 
 @enduml
 

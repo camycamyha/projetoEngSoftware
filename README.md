@@ -134,4 +134,4 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 
 ## Modelo Conceitual
 
-<img src="docs\modConceitual\Modelo Conceitual.png" alt="Casos de uso">
+<img src="docs\modConceitual\Modelo Conceitual.png" alt="Modelo Conceitual">

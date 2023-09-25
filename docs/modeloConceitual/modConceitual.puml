@@ -24,7 +24,9 @@ class Consultor {
 
     area: String
 
-    avaliacao: float    
+    avaliacao: float 
+
+    site:  
 
 }
 
@@ -36,11 +38,15 @@ class Cliente {
 
 }
 
- 
+
+
+ class Favoritos {
+
+
+}
 
  
 
-'private or health insurance
 
 class Consultoria{
 
@@ -53,6 +59,17 @@ class Consultoria{
 }
 
  
+
+ class PagamentoConsultoria {
+
+
+}
+
+
+class PrecoConsultoria {
+    
+
+}
 
  
 
@@ -88,7 +105,9 @@ Class Conteudo{
 
   Id: Integer
 
-  nome: String  
+  nome: String 
+
+  url: 
 
 }
 
@@ -105,16 +124,19 @@ Class Feedback{
  
 
  
+Cliente -- Favoritos
+
+Favoritos -- Consultor
+
+Consultor -- Categoria
 
 Categoria -- Conteudo
-
-Conteudo -- Consultor
 
 Consultor --|> Usuario
 
 Usuario <|-- Cliente
 
-Cliente --Feedback
+Consultoria --Feedback
 
 Cliente -- Consultoria
 

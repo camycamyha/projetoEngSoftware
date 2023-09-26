@@ -135,3 +135,9 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 ## Modelo Conceitual
 
 <img src="docs\modConceitual\Modelo Conceitual.png" alt="Modelo Conceitual">
+
+## Protótipo da Tela Principal em Baixa Fidelidade
+
+<img src="docs\prototipoTelas\tela1.jpg" alt="Tela Principal Menu">
+
+<img src="docs\prototipoTelas\tela2.jpg" alt="Tela Principal Pesquisa">

@@ -26,7 +26,7 @@ class Consultor {
 
     avaliacao: float 
 
-    site:  
+    site: String
 
 }
 
@@ -34,7 +34,7 @@ class Consultor {
 
 class Cliente {
 
-    favoritos: String
+    tipoCliente: String
 
 }
 
@@ -42,6 +42,7 @@ class Cliente {
 
  class Favoritos {
 
+    consultoresFavs: String
 
 }
 
@@ -133,7 +134,7 @@ Favoritos -- Consultor
 
 Consultor -- Categoria
 
-Categoria -- Conteudo
+Categoria o-- Conteudo
 
 Consultor --|> Usuario
 
@@ -145,9 +146,9 @@ Cliente -- Consultoria
 
 Consultoria -- Consultor
 
-Consultor -- Agenda
+Consultor o-- Agenda
 
-PagamentoConsultoria -- Consultoria
+PagamentoConsultoria --* Consultoria
 
 PrecoConsultoria -- Consultoria
 

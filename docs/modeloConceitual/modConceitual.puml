@@ -8,25 +8,30 @@ abstract class Usuario {
 
     email: String
 
+    telefone: String
+
     datanasc: Date
 
     senha: String
 
- 
 
-}  
+}
 
  
 
 class Consultor {
 
-    active: boolean
+    idConsultor: Long
 
-    area: String
+    contaBancaria: String 
+
+    precoHora: Double
+
+    status: Boolean
 
     avaliacao: float 
 
-    site: String
+    contato: String
 
 }
 
@@ -34,28 +39,34 @@ class Consultor {
 
 class Cliente {
 
-    tipoCliente: String
+    idCliente: Long
 
 }
 
 
 
- class Favoritos {
+ class AgendaConsultor {
 
-    consultoresFavs: String
+    horaInicio: Time
+
+    horaFim: Time
+
+    diaSemana: DayOfWeek
+
 
 }
 
- 
 
 
 class Consultoria{
 
-    Id: Integer
+    idConsultoria: Long
 
     data: Date
 
-    tempodeduracao: time
+    horario: LocalTime
+
+    tempodeDuracao: time
 
 }
 
@@ -63,41 +74,33 @@ class Consultoria{
 
  class PagamentoConsultoria {
   
-   id : Integer
+   idPagamento: Long
 
    FormaDePagamento: String
 
-   DataPagamento: Date
+   extrato: String
 }
 
-class PrecoConsultoria{
-
-   PrecoConsultoria : float
-
-}
  
 
-class Agenda {
+ class Assinatura{
 
-    Id: Long
+     idAssinatura: Long
 
-    dayWeek: DayOfWeek
+     dataInicio: Date
 
-    startTime: LocalTime
+     dataFim: Date
 
-    endTime: LocalTime
-
-   
-
-}
+     valor: Double
+ }
 
  
 
 Class Categoria{
 
-    Id: Integer
+    idCategoria: Long
 
-    nome: String
+    descricao: String
 
 }
 
@@ -107,52 +110,49 @@ Class Conteudo{
 
   tipo: String
 
-  Id: Integer
+  descricao: String
 
-  nome: String 
-
-  url: 
+  idCategoria: Integer
 
 }
 
 Class Feedback{
 
-    Id: String
+    idFeedback: Long
 
-    tipo: String
+    comentario: String
 
-    avaliacao: float
+    estrela: Integer
 
 }
 
  
 
- 
-Cliente -- Favoritos
+Consultor --|> Usuario
 
-Favoritos -- Consultor
+Usuario <|-- Cliente 
+
+Cliente -- Consultor : Favoritos
+
+Consultor o-- AgendaConsultor
+
+Consultor -- Estatistica
 
 Consultor -- Categoria
 
-Categoria o-- Conteudo
+Consultor -- Conteudo
 
-Consultor --|> Usuario
+Conteudo o-- Categoria
 
-Usuario <|-- Cliente
+Consultor -- Consultoria
 
-Consultoria --Feedback
+Consultoria -- Feedback
+
+Consultoria *-- PagamentoConsultoria
+
+Assinatura -- Cliente
 
 Cliente -- Consultoria
-
-Consultoria -- Consultor
-
-Consultor o-- Agenda
-
-PagamentoConsultoria --* Consultoria
-
-PrecoConsultoria -- Consultoria
-
-Consultor -- PrecoConsultoria
 
 
 @enduml

@@ -131,7 +131,7 @@ Class Feedback{
 Consultor --|> Usuario
 
 Usuario <|-- Cliente 
-
+ 
 Cliente -- Consultor : Favoritos
 
 Consultor o-- AgendaConsultor

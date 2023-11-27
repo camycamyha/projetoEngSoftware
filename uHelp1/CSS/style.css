@@ -22,25 +22,29 @@ header img{
     height: 6vh;
 }
 
-Nav{
-    background-color: whitesmoke;
-    height: 8vh;
-    text-align: center;
-    padding-top: 5vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
+
 
 a{
     text-decoration: none;
     color: black;
+    
 }
+
+a:link {
+    text-decoration: none;
+    color: black;
+   }
+   
+a:hover {
+    text-decoration: underline;
+   }
 
 aside{
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     text-decoration: none;
+    color: black;
 }
 
 h1{
@@ -101,3 +105,4 @@ footer{
     text-align: right;
     image-orientation: right;
 }
+

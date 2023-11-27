@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: whitesmoke;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 10vh;
+    text-align: left;
+    font-size: 3vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    align-items: left;
+    display: flex;
+}
+
+header img{
+    width: 13vh;
+    height: 6vh;
+}
+
+Nav{
+    background-color: whitesmoke;
+    height: 8vh;
+    text-align: center;
+    padding-top: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+aside{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    height: 76vh;
+    width: 100%;
+    display: flex;
+}
+
+aside{
+    background-color: whitesmoke;
+    width: 40vh;
+    }
+
+section{
+    background-color: whitesmoke;
+    display: flex;
+    margin: 0;
+    width: 75%;
+    height: 90%;
+    gap: 6vh;
+}
+
+.flex-container {
+    display: flex;
+    background-color: whitesmoke;
+  }
+  
+  .flex-container > div {
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    font-size: 10px;
+  }
+
+.div{
+    display: flex;
+}
+
+.voltar{
+    text-align: center;
+}
+
+.voltar a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    height: 6vh;
+    text-align: right;
+    image-orientation: right;
+}

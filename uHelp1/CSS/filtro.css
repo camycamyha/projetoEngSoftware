@@ -1,0 +1,58 @@
+
+
+.meu-botao {
+    margin-left: 40px;
+}
+
+.titulo{
+    margin-left: 40px;
+}
+
+#demo1{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.heading{
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+
+#fs_page_title{
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+    margin-top: 18px;
+    margin-left: -23px;
+    
+}
+
+#seta{
+    margin-top: 15px;
+    margin-left: 13px;
+}
+
+
+.heading{
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#opcs{
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+#linha{
+    color: #F0F0F0
+}
+
+#texto {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+

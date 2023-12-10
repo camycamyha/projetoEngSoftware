@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>uHelp!</title>
-    
+    <link rel="stylesheet" href="CSS\filtro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
     <style>
        .custom-title {
         font-family: 'Neuton', serif;
@@ -44,11 +48,15 @@
         </div>
       </nav>
       <p></p>
-      <h1 class="custom-title">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Marcenaria</b></h1>
+      <div class="container-fluid mt-6">
+      <h1 class="custom-title titulo">
+        <b>Marcenaria</b></h1>
+      </div>
+        <div class="container-fluid">
+          <button class="btn btn-dark meu-botao" data-bs-toggle="offcanvas" data-bs-target="#demo1">Filtrar conteúdo</button>
+          <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#demo2">Filtrar consultor</button>
+       </div>
     
-       
-
     <div class="container">
         <div class="row gy-3 my-3">
             <div class="col-sm-6 col-md-4 col-lg-3">
@@ -92,8 +100,8 @@
                     <a href="">
                     <img src="images/img4.png" class="card-img-top" alt="imagem4"></a>
                     <div class="card-body">
-                      <h5 class="card-title">O segredo da montagem para iniciantes</h5>
-                      <p class="card-text">O segredo da montagem para iniciantes - Por <u>Leandro Mendes</u></p>
+                      <h5 class="card-title">O segredo da montagem</h5>
+                      <p class="card-text">O segredo da montagem - Por <u>Leandro Mendes</u></p>
                       <a href="UHelp\Tela2_uHelp\html\consultoria.html" class="btn btn-dark">Perfil do Consultor</a>
                     </div>
                   </div>
@@ -146,12 +154,217 @@
                     </div>
                   </div>
             </div>
-
         </div>
     </div>
-    <footer>
-      <img src="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; images/logo.png" alt="">
-  </footer>
+
+
+    <div class="offcanvas offcanvas-start " id="demo1">
+      <div class="container-fluid" id="test">
+        <div class="row" id="fs_app">
+          <section class="col-12" id="fs_header_bar" style="display: flex; align-items: center;">
+            <div class="col-2" id="seta">
+                <img src="images/seta.png" alt="Ícone de Filtro">
+            </div>
+            <div class="col-10" id="fs_page_title">
+                <b>Filtrar conteúdo</b>
+            </div>
+          </section>
+
+          <section class="col-12" id="fs_price_body">
+              <div>
+                  <span class="heading">
+                  </br>
+                      Data de upload
+                  </span>
+
+                  <div class="opcs" id="opcs">
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio1" name="optradio1" value="option1" checked>
+                      <label class="form-check-label" for="radio1">Última hora</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option2">
+                      <label class="form-check-label" for="radio2">Hoje</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option3">
+                      <label class="form-check-label" for="radio2">Esta semana</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option4">
+                      <label class="form-check-label" for="radio2">Este mês</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option5">
+                      <label class="form-check-label" for="radio2">Este ano</label>
+                    </div>
+                  </div>
+              </div>
+          </section>
+
+          <div class="linha" id="linha">
+            <p>_________________________________________________</p>
+          </div>
+
+          <section class="col-12" id="fs_price_body">
+            <div>
+                <span class="heading">
+                    Duração
+                </span>
+                <div class="opcs2" id="opcs">
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio2" value="option1" checked>
+                    <label class="form-check-label" for="radio1">Menos de 4 minutos</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio2" value="option2">
+                    <label class="form-check-label" for="radio2">4 a 20 minutos</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio2" value="option3">
+                    <label class="form-check-label" for="radio2">Com mais de vinte minutos</label>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+          <div class="linha" id="linha">
+           <p>_________________________________________________</p>
+          </div>
+
+          <section class="col-12" id="fs_price_body">
+           <div>
+              <span class="heading">
+                  Ordenar por
+              </span>
+              <div class="opcs2" id="opcs">
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio1" name="optradio3" value="option1" checked>
+                  <label class="form-check-label" for="radio1">Data de envio</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option2">
+                  <label class="form-check-label" for="radio2">Contagem de visualização</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option3">
+                  <label class="form-check-label" for="radio2">Classificação</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="linha" id="linha">
+            <p>_________________________________________________</p>
+          </div>
+
+          <div class="container-fluid" id="btn-fim">
+            <button class="btn btn-dark">Limpar filtros</button>
+            <button class="btn btn-dark">Filtrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="offcanvas offcanvas-start " id="demo2">
+
+      <div class="container-fluid" id="test">
+        <div class="row" id="fs_app">
+          <section class="col-12" id="fs_header_bar" style="display: flex; align-items: center;">
+            <div class="col-2" id="seta">
+                <img src="images/seta.png" alt="Ícone de Filtro">
+            </div>
+            <div class="col-10" id="fs_page_title">
+                <b>Filtrar consultor</b>
+            </div>
+          </section>
+
+          <section class="col-12" id="fs_price_body">
+            <div>
+                <span class="heading">
+                </br>
+                    Valor por hora
+                </span>
+                <form action="/action_page.php">
+                  <input type="range" class="form-range" id="customRange" name="points">
+                </form>
+                <div class="texto" id="texto">
+                  <p id="texto-min">R$50,00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    R$500,00
+                  </p>
+                </div>
+            </div>
+          </section>
+
+          <div class="linha" id="linha">
+            <p>_________________________________________________</p>
+          </div>
+
+          <section class="col-12" id="fs_price_body">
+            <div>
+                <span class="heading">
+                </br>
+                    Aproximidade
+                </span>
+                <form action="/action_page.php">
+                  <input type="range" class="form-range" id="customRange" name="points">
+                </form>
+                <div class="texto" id="texto">
+                  <p id="texto-min">1 Km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    500 Km
+                  </p>
+                </div>
+            </div>
+          </section>
+
+          <div class="linha" id="linha">
+            <p>_________________________________________________</p>
+          </div>
+
+          <section class="col-12" id="fs_price_body">
+            <div>
+               <span class="heading">
+                   Ordenar por
+               </span>
+               <div class="opcs2" id="opcs">
+                 <div class="form-check">
+                   <input type="radio" class="form-check-input" id="radio1" name="optradio3" value="option1" checked>
+                   <label class="form-check-label" for="radio1">Quantidade de consultas atendidas</label>
+                 </div>
+                 <div class="form-check">
+                   <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option2">
+                   <label class="form-check-label" for="radio2">Quantidade de vídeos postados</label>
+                 </div>
+                 <div class="form-check">
+                   <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option3">
+                   <label class="form-check-label" for="radio2">Melhores avaliações</label>
+                 </div>
+                 <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option3">
+                  <label class="form-check-label" for="radio2">Mais antigos no uHelp</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio3" value="option3">
+                  <label class="form-check-label" for="radio2">Mais novos no uHelp</label>
+                </div>
+               </div>
+             </div>
+           </section>
+ 
+           <div class="linha" id="linha">
+             <p>_________________________________________________</p>
+           </div>
+ 
+           <div class="container-fluid" id="btn-fim">
+             <button class="btn btn-dark">Limpar filtros</button>
+             <button class="btn btn-dark">Filtrar</button>
+           </div>
+         </div>
+       </div>
+      </div>
+    
+    </div>
+
   </body>
 </html>
     

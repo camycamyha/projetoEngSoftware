@@ -12,6 +12,10 @@ abstract class Usuario {
 
     datanasc: Date
 
+    genero: String
+
+    endereco: String
+
     senha: String
 
 
@@ -25,13 +29,15 @@ class Consultor {
 
     contaBancaria: String 
 
-    precoHora: Double
+    valorHora: Double
 
     status: Boolean
 
     avaliacao: float 
 
     contato: String
+
+    site: String
 
 }
 
@@ -135,8 +141,6 @@ Usuario <|-- Cliente
 Cliente -- Consultor : Favoritos
 
 Consultor o-- AgendaConsultor
-
-Consultor -- Estatistica
 
 Consultor -- Categoria
 

@@ -1,0 +1,84 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+  }
+  
+  .container {
+    text-align: center;
+    color: #343a40;
+  }
+  
+  .card {
+    background-color: #e9ecef;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    color: #343a40;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  .modal-content {
+    background-color: #f8f9fa;
+  }
+  
+  .modal-title {
+    color: #343a40;
+  }
+  
+  .form-label {
+    color: #343a40;
+  }
+  
+  .form-control {
+    border-radius: 4px;
+  }
+  
+  .btn-close {
+    color: #343a40;
+  }
+  
+  .btn-custom {
+    background-color: #495057 !important;
+    color: #fff !important;
+  }
+  
+  .btn-custom:hover {
+    background-color: #343a40 !important;
+  }
+  
+.btn-success {
+    background-color: #646b66;
+    color: #fff;
+    border: none; 
+    box-shadow: none; 
+  }
+  
+  .btn-success:hover {
+    background-color: #575a58;
+    border: none; 
+    box-shadow: none;
+ }
+  
+  .modal-content .btn-success {
+    background-color: #646b66;
+    color: #fff;
+    border: none; 
+    box-shadow: none; 
+  }
+  
+  .modal-content .btn-success:hover {
+    background-color: #575a58;
+    border: none; 
+    box-shadow: none; 
+  }
+  

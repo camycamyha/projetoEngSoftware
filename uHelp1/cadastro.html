@@ -1,203 +1,172 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>uHelp!</title>
-    <meta name="description" content="Consutoria de todos os tipos para te ajudar no dia-a-dia e tudo online">
-    <link rel="stylesheet" href="CSS\cadastro.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uHelp!</title>
+  <meta name="description" content="Consultoria de todos os tipos para te ajudar no dia-a-dia e tudo online">
+  <link rel="stylesheet" href="CSS/cadastro.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
- </head>
-  <body> 
-    
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Sobre a empresa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Torne-se um consultor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Planos e valores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Duvidas</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Pesquisar">
-            <button class="btn btn-dark" type="button">Pesquisar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    </body>
-</html>
-<div class="container_form">
+</head>
+<body>
 
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Sobre a empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Torne-se um consultor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assinatura.html">Planos e valores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Dúvidas</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Pesquisar">
+          <button class="btn btn-dark" type="button">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container_form">
     <h1>Formulário de Cadastro</h1>
 
     <form class="form" action="#" method="post">
-        
-        <div class="form_grupo">
-            <label for="nome" class="form_label">Nome</label>
-            <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+
+      <!-- Existing form fields -->
+      <div class="form_grupo">
+        <label for="nome" class="form_label">Nome</label>
+        <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+      </div>
+
+      <div class="form_grupo">
+        <label for="e-mail" class="form_label">Email</label>
+        <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+      </div>
+
+      <div class="form_grupo">
+        <label for="datanascimento" class="form_label">Data de Nascimento</label>
+        <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+      </div>
+
+      <div class="form_grupo">
+        <span class="legenda">Sexo:</span>
+        <div class="radio-btn">
+          <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
+          <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
         </div>
-        
-        <div class="form_grupo">
-            <label for="e-mail" class="form_label">Email</label>
-            <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+        <div class="radio-btn">
+          <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
+          <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
         </div>
-        
-        <div class="form_grupo">
-            <label for="datanascimento" class="form_label">Data de Nascimento</label>
-            <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
-        </div>        
+      </div>
 
-        <div class="form_grupo">
-
-            <span class="legenda">Sexo:</span>
-            
-            <div class="radio-btn">
-                <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
-                <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
-            </div>
-
-            <div class="radio-btn">
-                <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
-                <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
-            </div>
-
+      <div class="form_grupo">
+        <span class="legenda">Em qual categoria você se encaixa?</span>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="marcenaria" name="aprender" value="marcenaria">
+          <label for="marcenaria" class="form_label check_label"> <span class="check_new_btn"></span> Marcenaria</label>
         </div>
-      
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="mecanica" name="aprender" value="mecanica">
+          <label for="mecanica" class="form_label check_label"><span class="check_new_btn"></span> Mecânica</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="informatica" name="aprender" value="informatica">
+          <label for="informatica" class="form_label check_label"><span class="check_new_btn"></span> Informática</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="financas" name="aprender" value="financas">
+          <label for="financas" class="form_label check_label"><span class="check_new_btn"></span> Finanças</label>
+        </div>
+      </div>
 
-        <div class="form_grupo">
+      <div class="form_grupo">
+        <label for="telefone" class="form_label">Telefone</label>
+        <input type="tel" name="telefone" class="form_input" id="telefone" placeholder="(99) 99999-9999" required>
+      </div>
 
-            <span class="legenda"> Em qual catgoria você se encaixa?</span>
+      <div class="form_grupo">
+        <label for="conta_bancaria" class="form_label">Conta Bancária</label>
+        <input type="text" name="conta_bancaria" class="form_input" id="conta_bancaria" placeholder="Número da conta" required>
+      </div>
 
-            <div class="check-btn">
-                <input type="checkbox" class="form_new_input" id="html5" name="aprender" value="html5">
-                <label for="html5" class="form_label check_label"> <span class="check_new_btn"></span> Marcenaria</label>
-            </div>
+      <div class="form_grupo">
+        <label for="agencia" class="form_label">Agência</label>
+        <input type="text" name="agencia" class="form_input" id="agencia" placeholder="Número da agência" required>
+      </div>
 
-            <div class="check-btn">
-                <input type="checkbox" class="form_new_input" id="css3" name="aprender" value="css3">
-                <label for="css3" class="form_label check_label"><span class="check_new_btn"></span> Mecânica</label>
-            </div>
+      <div class="form_grupo">
+        <label for="banco" class="form_label">Banco</label>
+        <input type="text" name="banco" class="form_input" id="banco" placeholder="Nome do banco" required>
+      </div>
 
-            <div class="check-btn">
-                <input type="checkbox" class="form_new_input" id="jquery" name="aprender" value="jquery">
-                <label for="jquery" class="form_label check_label"><span class="check_new_btn"></span> Informática</label>
-            </div>
+      <div class="form_grupo">
+        <label for="valor_por_hora" class="form_label">Valor por Hora</label>
+        <input type="number" name="valor_por_hora" class="form_input" id="valor_por_hora" placeholder="R$" min="0" step="5" required>
+      </div>
 
-            <div class="check-btn">
-                <input type="checkbox" class="form_new_input" id="wordpress" name="aprender" value="wordpress">
-                <label for="wordpress" class="form_label check_label"><span class="check_new_btn"></span> Finanças</label>
-            </div>
-            <br />
-            <div class="form_grupo">
-              <table cellspacing="10">
-             
-                <tr>
-                
-                  <label for="rua">Rua:</label>
-                
-                 
-                  <input type="text" name="rua">
-                 
-                  <label for="numero">Numero:</label>
-                 
-              
-                  <input type="text" name="numero" size="4">
-                 
-                </tr>
-                <tr>
-                 
-                  <label for="bairro">Bairro: </label>
-                 
-                 
-                  <input type="text" name="bairro">
-                
-                </tr>
-                <tr>
-                 
-                  <label for="estado">Estado:</label>
-                 
-                  <select name="estado"> 
-                  <option value="ac">Acre</option> 
-                  <option value="al">Alagoas</option> 
-                  <option value="am">Amazonas</option> 
-                  <option value="ap">Amapá</option> 
-                  <option value="ba">Bahia</option> 
-                  <option value="ce">Ceará</option> 
-                  <option value="df">Distrito Federal</option> 
-                  <option value="es">Espírito Santo</option> 
-                  <option value="go">Goiás</option> 
-                  <option value="ma">Maranhão</option> 
-                  <option value="mt">Mato Grosso</option> 
-                  <option value="ms">Mato Grosso do Sul</option> 
-                  <option value="mg">Minas Gerais</option> 
-                  <option value="pa">Pará</option> 
-                  <option value="pb">Paraíba</option> 
-                  <option value="pr">Paraná</option> 
-                  <option value="pe">Pernambuco</option> 
-                  <option value="pi">Piauí</option> 
-                  <option value="rj">Rio de Janeiro</option> 
-                  <option value="rn">Rio Grande do Norte</option> 
-                  <option value="ro">Rondônia</option> 
-                  <option value="rs">Rio Grande do Sul</option> 
-                  <option value="rr">Roraima</option> 
-                  <option value="sc">Santa Catarina</option> 
-                  <option value="se">Sergipe</option> 
-                  <option value="sp">São Paulo</option> 
-                  <option value="to">Tocantins</option> 
-                 </select>
-                 
-                </tr>
-                <tr>
-                 
-                  <label for="cidade">Cidade: </label>
-                 
-                  <input type="text" name="cidade">
-                 
-                </tr>
-                <tr>
-                 
-                  <label for="cep">CEP: </label>
-                 
-                  <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
-                 
+      <div class="form_grupo">
+        <label for="site" class="form_label">Site</label>
+        <input type="url" name="site" class="form_input" id="site" placeholder="http://www.seusite.com" required>
+      </div>
 
-            </div>
-            <br />
-            
+      <div class="form_grupo">
+        <label for="rua">Rua:</label>
+        <input type="text" name="rua">
+      </div>
 
-            <div class="form_message">
-                
-                <label for="message" class="form_message_label"> Faça uma breve aprensetação</label>
-                <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+      <div class="form_grupo">
+        <label for="numero">Número:</label>
+        <input type="text" name="numero" size="4">
+      </div>
 
-            </div>
+      <div class="form_grupo">
+        <label for="bairro">Bairro: </label>
+        <input type="text" name="bairro">
+      </div>
 
-            <div class="submit">
+      <div class="form_grupo">
+        <label for="estado">Estado:</label>
+        <select name="estado" class="form_input">
+          <option value="ac">Acre</option>
+          <option value="al">Alagoas</option>
+          <option value="am">Amazonas</option>
+          <!-- Adicione as outras opções aqui -->
+        </select>
+      </div>
 
-              <input type="hidden" name="acao" value="enviar">
-              <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
-            
-            </div>
+      <div class="form_grupo">
+        <label for="cidade">Cidade: </label>
+        <input type="text" name="cidade">
+      </div>
+
+      <div class="form_grupo">
+        <label for="cep">CEP: </label>
+        <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+      </div>
+
+      <div class="submit">
+        <input type="hidden" name="acao" value="enviar">
+        <button type="submit" name="Submit" class="submit_btn">Cadastrar</button>
+      </div>
+
     </form>
 
-</div><!--container_form-->
-    
+  </div><!-- container_form -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>

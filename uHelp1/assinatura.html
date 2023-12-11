@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura de Planos</title>
+  <link rel="stylesheet" href="CSS/assinatura.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Sobre a empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Torne-se um consultor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assinatura.html">Planos e valores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Dúvidas</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Pesquisar">
+            <button class="btn btn-dark" type="button">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+  <div class="container mt-5">
+    <h1>Escolha o Seu Plano</h1>
+    <p>Selecione um dos planos abaixo para assinar.</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Plano Mensal</h5>
+            <p class="card-text">O valor é cobrado mensalmente e você pode cancelar quando quiser</p>
+            <p class="card-text">R$19.99/mês</p>
+            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#paymentModal" data-plano="Básico">Assinar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Plano Semestral</h5>
+            <p class="card-text">O valor é cobrado a cada 6 meses.</p>
+            <p class="card-text">R$107.95/mês</p>
+            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#paymentModal" data-plano="Padrão">Assinar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Plano Anual</h5>
+            <p class="card-text">O valor é cobrado a cada Ano.</p>
+            <p class="card-text">R215,90/mês</p>
+            <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#paymentModal" data-plano="Premium">Assinar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paymentModalLabel">Informações de Pagamento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nomeCartao" class="form-label">Nome no Cartão</label>
+                <input type="text" class="form-control" id="nomeCartao" required>
+              </div>
+              <div class="mb-3">
+                <label for="numeroCartao" class="form-label">Número do Cartão</label>
+                <input type="text" class="form-control" id="numeroCartao" required>
+              </div>
+              <div class="mb-3">
+                <label for="dataValidade" class="form-label">Data de Validade</label>
+                <input type="text" class="form-control" id="dataValidade" placeholder="MM/AA" required>
+              </div>
+              <div class="mb-3">
+                <label for="codigoSeguranca" class="form-label">Código de Segurança</label>
+                <input type="text" class="form-control" id="codigoSeguranca" required>
+              </div>
+              <button type="submit" class="btn btn-success">Confirmar Assinatura</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

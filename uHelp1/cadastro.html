@@ -33,7 +33,8 @@
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="text" placeholder="Pesquisar">
-          <button class="btn btn-dark" type="button">Pesquisar</button>
+          <button class="btn btn-dark me-2" type="button">Pesquisar</button>
+          <a href="pUsuario.html" button class="btn btn-warning" type="button">Perfil</a></button>
         </form>
       </div>
     </div>
@@ -118,6 +119,47 @@
       </div>
 
       <div class="form_grupo">
+        <span class="legenda">Quais dias da semana você estará disponível?</span>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="financas" name="aprender" value="financas">
+          <label for="financas" class="form_label check_label"><span class="check_new_btn"></span> Domingo</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="marcenaria" name="aprender" value="marcenaria">
+          <label for="marcenaria" class="form_label check_label"> <span class="check_new_btn"></span> Segunda-feira</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="mecanica" name="aprender" value="mecanica">
+          <label for="mecanica" class="form_label check_label"><span class="check_new_btn"></span> Terça-feira</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="informatica" name="aprender" value="informatica">
+          <label for="informatica" class="form_label check_label"><span class="check_new_btn"></span> Quarta-feira</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="financas" name="aprender" value="financas">
+          <label for="financas" class="form_label check_label"><span class="check_new_btn"></span> Quinta-feira</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="financas" name="aprender" value="financas">
+          <label for="financas" class="form_label check_label"><span class="check_new_btn"></span> Sexta-feira</label>
+        </div>
+        <div class="check-btn">
+          <input type="checkbox" class="form_new_input" id="financas" name="aprender" value="financas">
+          <label for="financas" class="form_label check_label"><span class="check_new_btn"></span> Sábado</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="appt">Qual horário de disponibilidade?</label>
+        <small>De </small>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+        <small>até </small>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+      </div>
+        
+
+      <div class="form_grupo">
         <label for="site" class="form_label">Site</label>
         <input type="url" name="site" class="form_input" id="site" placeholder="http://www.seusite.com" required>
       </div>
@@ -159,7 +201,7 @@
 
       <div class="submit">
         <input type="hidden" name="acao" value="enviar">
-        <button type="submit" name="Submit" class="submit_btn">Cadastrar</button>
+        <a href="pConsultor.html" button class="btn btn-warning" type="button">Cadastrar</a></button>
       </div>
 
     </form>

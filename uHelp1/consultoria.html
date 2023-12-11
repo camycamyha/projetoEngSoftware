@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="funcoes.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>uHelp!</title>
@@ -37,7 +38,8 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="text" placeholder="Pesquisar">
-            <button class="btn btn-dark" type="button">Pesquisar</button>
+            <button class="btn btn-dark me-2" type="button">Pesquisar</button>
+          <a href="pUsuario.html" button class="btn btn-warning" type="button">Perfil</a></button>
           </form>
         </div>
       </div>
@@ -76,7 +78,6 @@
                       <div class="card">
                         <div class="card-header p-4">
                           <h2>Sr. Ricardo Peixoto - Consultoria em Marcenaria
-                          <button class="btn btn-dark btn-lg" type="button">Preços</button>
                           </h2>
                         <div class="card-body">
                           25 vídeos encontrados
@@ -86,23 +87,37 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text">💬</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Deixe uma mensagem para entrar em contato">
+                            <input type="text" class="form-control" placeholder="Deixe seu feedback para o consultor">
                             <button class="btn btn-dark" type="button">Enviar</button>
+                            
                           </div>
-                          <div>
-                            <button class="btn btn-dark" type="button">Enviar</button>
-                          </div>
+                          <a href="javascript:void(0)" onclick="Avaliar(1)">
+                            <img src="img/star0.png" id="s1"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(2)">
+                            <img src="img/star0.png" id="s2"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(3)">
+                            <img src="img/star0.png" id="s3"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(4)">
+                            <img src="img/star0.png" id="s4"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(5)">
+                            <img src="img/star0.png" id="s5"></a>
+                            <p id="rating">0</p>
                         </div>
                       </div>
                         <div class="card-footer p-3">
-                          <a href="calendar3.html" button class="btn btn-dark" type="button">Marcar um Horário</a></button>
-                          <button class="btn btn-dark" type="button">Enviar</button>
+                          <a href="calendar3.html" button class="btn btn-warning" type="button">Marcar um Horário</a></button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              
         </div>
         <footer>
           <img src="images/logo.png" alt="">

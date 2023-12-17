@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width= , initial-scale=1.0">
+   <title>uHelp!</title>
+   <meta name="description" content="Consutoria de todos os tipos para te ajudar no dia-a-dia e tudo online">
+   <link rel="stylesheet" href="./CSS/style.css">
+   <title>navbar uhelp</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uHelp!</title>
-    <meta name="description" content="Consutoria de todos os tipos para te ajudar no dia-a-dia e tudo online">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Agenda do Consultor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        select {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
-
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+          <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,73 +80,123 @@
             <form class="d-flex">
               <input class="form-control me-2" type="text" placeholder="Pesquisar">
               <button class="btn btn-dark me-2" type="button">Pesquisar</button>
-          <a href="pUsuario.html" button class="btn btn-warning" type="button">Perfil</a></button>
+              <a href="pUsuario.html" button class="btn btn-warning" type="button">Perfil</a></button>
             </form>
           </div>
         </div>
       </nav>
+    
+    <header>
+        <h1>Extratos</h1>
+        <label for="month">Filtrar por Mês:</label>
+        <select id="month" onchange="filterByMonth()">
+            <option value="0">Todos os Meses</option>
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+    </header>
 
-    <div class="container mt-3">
-        <div class="container-fluid p-5 bg-secondary text-white text-center">PROPAGANDA</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Cliente</th>
+                <th>Preço Total</th>
+                <th>Taxa da Plataforma</th>
+                <th>Valor a receber</th>
+                <th>Data a receber</th>
+                <th>Forma de Pagamento</th>
+                <th>Duração</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-month="1">01/01/2023 - 14:00</td>
+                <td>Maria Joana</td>
+                <td>R$ 200,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 180,00</td>
+                <td>01/02/2023</td>
+                <td>Cartão de Crédito</td>
+                <td>1 hora</td>
+            </tr>
+            <tr>
+                <td data-month="2">01/02/2023 - 14:00</td>
+                <td>Maria Joana</td>
+                <td>R$ 200,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 180,00</td>
+                <td>01/03/2023</td>
+                <td>Cartão de Crédito</td>
+                <td>1 hora</td>
+            </tr>
+            <tr>
+                <td data-month="3">01/03/2023 - 14:00</td>
+                <td>Maria Joana</td>
+                <td>R$ 200,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 180,00</td>
+                <td>01/04/2023</td>
+                <td>Cartão de Crédito</td>
+                <td>1 hora</td>
+            </tr>
+            <tr>
+                <td data-month="4">01/04/2023 - 14:00</td>
+                <td>Maria Joana</td>
+                <td>R$ 200,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 180,00</td>
+                <td>01/05/2023</td>
+                <td>Cartão de Crédito</td>
+                <td>1 hora</td>
+            </tr>
+            <tr>
+                <td data-month="5">01/05/2023 - 14:00</td>
+                <td>Maria Joana</td>
+                <td>R$ 200,00</td>
+                <td>R$ 20,00</td>
+                <td>R$ 180,00</td>
+                <td>01/06/2023</td>
+                <td>Cartão de Crédito</td>
+                <td>1 hora</td>
+            </tr>
+            <thead>
+                <tr>
+                    <th>TOTAL</th>
+                        <td>R$</td>
+                </tr>
+                
+            </thead>
+        </tbody>
+    </table>
 
-        <div class="container mt-3">
-            <h2 class="mb-4">Extratos Recentes</h2>
+    <script>
+        function filterByMonth() {
+            const selectedMonth = document.getElementById('month').value;
+            const rows = document.querySelectorAll('tbody tr');
 
-            <div class="card bg-dark text-white">
-                <div class="card-body">
-                    <h5 class="card-title">09/12/2023</h5>
-                    <p class="card-text">Cliente: Maria Tereza de Andrade</p>
-                    <p class="card-text">Preço: R$50,00</p>
-                    <p class="card-text">Forma de pagamento: Pix</p>
-                    <p class="card-text">Horário: 14:30</p>
-                    <p class="card-text">Tema: Saúde</p>
-                    <p class="card-text">Duração: 01:00</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white mt-3">
-                <div class="card-body">
-                    <h5 class="card-title">21/08/2023</h5>
-                    <p class="card-text">Cliente: José de Abreu Ferreira</p>
-                    <p class="card-text">Preço: R$140,00</p>
-                    <p class="card-text">Forma de pagamento: Cartão</p>
-                    <p class="card-text">Horário: 22:00</p>
-                    <p class="card-text">Tema: Elétrica</p>
-                    <p class="card-text">Duração: 02:00</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white mt-3">
-                <div class="card-body">
-                    <h5 class="card-title">18/05/2023</h5>
-                    <p class="card-text">Cliente: Clarisse Prado</p>
-                    <p class="card-text">Preço: R$100,00</p>
-                    <p class="card-text">Forma de pagamento: Boleto</p>
-                    <p class="card-text">Horário: 15:30</p>
-                    <p class="card-text">Tema: Investimentos</p>
-                    <p class="card-text">Duração: 01:30</p>
-                </div>
-            </div>
-
-            <div class="card bg-dark text-white mt-3">
-                <div class="card-body">
-                    <h5 class="card-title">27/02/2023</h5>
-                    <p class="card-text">Cliente: Roberto Carlos Francisco</p>
-                    <p class="card-text">Preço: R$200,00</p>
-                    <p class="card-text">Forma de pagamento: Pix</p>
-                    <p class="card-text">Horário: 08:00</p>
-                    <p class="card-text">Tema: Turismo</p>
-                    <p class="card-text">Duração: 01:00</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer class="text-center mt-3">
-        <img src="images/logo.png" alt="">
-    </footer>
-
+            rows.forEach(row => {
+                const rowMonth = row.querySelector('td').getAttribute('data-month');
+                if (selectedMonth === '0' || selectedMonth === rowMonth) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+<footer>
+    <img src="images/logo.png" alt="">
+</footer>
 </body>
-
 </html>

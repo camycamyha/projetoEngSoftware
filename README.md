@@ -68,7 +68,7 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 
 - O sistema não deve permitir agendar uma consultoria em data e horário que não estejam previamente   disponibilizadas pelo consultor. Assim como o sistema não deve permitir o agendamento de duas consultorias na mesma data e horário. 
 
-- Tanto o cliente quanto o consultor podem solicitar pelo cancelamento ou reagendamento da consultoria já marcada.
+- Tanto o cliente quanto o consultor podem solicitar pelo cancelamento da consultoria já marcada.
 
 - O sistema permitirá que o cliente dê um feedback depois que a consultoria for finalizada. 
 
@@ -85,11 +85,9 @@ Pessoas acima de 18 anos que estejam buscando solucionar problemas do dia a dia 
 
 - Cancelamento de consultoria: Caso o consultor cancele, retorna o pagamento ao usuário. Caso o usuário cancele, deduz 10% de taxa de cancelamento.
 
-- Mudança da data da consultoria: Solicita ao usuário uma nova data, até uma semana depois do agendamento anterior.
-
 - Duração da consultoria: Quando o horário da consultoria estiver próximo do fim, o sistema emitirá uma notificação para ambas as partes.
 
-- Listagem de consultorias: Tanto o usuário como o consultor poderão ver todas as consultorias agendadas e suas principais informações.
+- Listagem de consultorias: O consultor poderá ver todas as consultorias agendadas e suas principais informações.
 
 - Feedback: Após uma consultoria, o usuário poderá dar até 5 estrelas de avaliação e fazer um comentário, se desejado.
 

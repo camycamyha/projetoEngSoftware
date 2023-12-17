@@ -33,11 +33,9 @@ class Consultor {
 
     status: Boolean
 
-    avaliacao: float 
-
     contato: String
 
-    site: String
+    canal: String
 
 }
 
@@ -74,6 +72,7 @@ class Consultoria{
 
     tempodeDuracao: time
 
+    status: String
 }
 
  
@@ -84,10 +83,27 @@ class Consultoria{
 
    FormaDePagamento: String
 
-   extrato: String
 }
 
- 
+
+class Extrato {
+    DataConsultoria: Date
+
+    NomeCliente: String
+
+    ValorTotal: Double
+
+    TaxaSite: Double
+
+    ValorReceber: Double
+
+    DataReceber: Date
+
+    FormaDePagamento: String
+
+    TempodeDuracao: time
+
+}
 
  class Assinatura{
 
@@ -128,11 +144,10 @@ Class Feedback{
 
     comentario: String
 
-    estrela: Integer
-
 }
 
  
+ PagamentoConsultoria *-- Extrato
 
 Consultor --|> Usuario
 
@@ -151,6 +166,8 @@ Conteudo o-- Categoria
 Consultor -- Consultoria
 
 Consultoria -- Feedback
+
+Cliente -- Feedback
 
 Consultoria *-- PagamentoConsultoria
 

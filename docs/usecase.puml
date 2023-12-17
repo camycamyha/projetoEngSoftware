@@ -14,7 +14,7 @@ Usuario <|-- con
 
 package uHelp {
 
-    usecase "Solicitar consulta" as uc1 
+    usecase "Solicitar consultoria" as uc1 
 
     usecase "Pesquisar tutorial" as uc2
 
@@ -28,7 +28,7 @@ package uHelp {
 
     usecase "Disponibilizar Horario" as uc7
 
-    usecase "Cancelar/Reagendar consulta" as uc8
+    usecase "Cancelar consultoria" as uc8
 
     usecase "Consultar extrato" as uc9
 

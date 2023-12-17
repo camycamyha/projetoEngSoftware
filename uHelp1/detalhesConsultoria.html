@@ -11,9 +11,45 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
- 
+</head>
+
+<body>
+   
+ <nav class="navbar navbar-expand-sm bg-light navbar-light">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.png" alt=""></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="mynavbar">
+       <ul class="navbar-nav me-auto">
+         <li class="nav-item">
+           <a class="nav-link" href="javascript:void(0)">Sobre a empresa</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="cadastro.html">Torne-se um consultor</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="assinatura.html">Planos e valores</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="javascript:void(0)">Duvidas</a>
+         </li>
+       </ul>
+       <form class="d-flex">
+         <input class="form-control me-2" type="text" placeholder="Pesquisar">
+         <button class="btn btn-dark me-2" type="button">Pesquisar</button>
+         <a href="pUsuario.html" button class="btn btn-warning" type="button">Perfil</a></button>
+       </form>
+     </div>
+   </div>
+ </nav>
+       
+ <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Agenda do Consultor</title>
     <style>
         body {
@@ -48,45 +84,14 @@
             background-color: #333;
             color: #fff;
         }
-
-        select {
-            padding: 8px;
-            margin-bottom: 10px;
-        }
     </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Sobre a empresa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cadastro.html">Torne-se um consultor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="assinatura.html">Planos e valores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Duvidas</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Pesquisar">
-              <button class="btn btn-dark me-2" type="button">Pesquisar</button>
-              <a href="pUsuario.html" button class="btn btn-warning" type="button">Perfil</a></button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    
-     
+    </nav>
+
     <header>
         <h1>Detalhes</h1>
     </header>
@@ -96,72 +101,113 @@
             <tr>
                 <th>Horário</th>
                 <th>Cliente</th>
-                <th>Valor a receber</th>
+                <th>Valor da Consulta</th>
                 <th>Status</th>
-                <th>Cancelamento</th>
+                <th>Opções</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>10:00</td>
-                <td>Maria Joana</td>
-                <td>R$ 180,00</td>
-                <td>
-                    <a href="#" button class="btn btn-warning" type="button">Iniciar Consultoria</a></button>
-                </td>
-                <td>
-                    <a href="#" button class="btn btn-dark" type="button">Cancelar Consultoria</a></button>
-                </td>
-            </tr>
-            <tr>
-                <td>11:00</td>
-                <td>Maria Joana</td>
-                <td>R$ 180,00</td>
-                <td>
-                    <a href="#" button class="btn btn-warning" type="button">Iniciar Consultoria</a></button>
-                </td>
-                <td>
-                    <a href="#" button class="btn btn-dark" type="button">Cancelar Consultoria</a></button>
-                </td>
-            </tr>
-            <tr>
-                <td>12:00</td>
-                <td>Maria Joana</td>
-                <td>R$ 180,00</td>
-                <td>
-                    <a href="#" button class="btn btn-warning" type="button">Iniciar Consultoria</a></button>
-                </td>
-                <td>
-                    <a href="#" button class="btn btn-dark" type="button">Cancelar Consultoria</a></button>
-                </td>
-            </tr>
-            <tr>
-                <td>13:00</td>
-                <td>Maria Joana</td>
-                <td>R$ 180,00</td>
-                <td>
-                    <a href="#" button class="btn btn-warning" type="button">Iniciar Consultoria</a></button>
-                </td>
-                <td>
-                    <a href="#" button class="btn btn-dark" type="button">Cancelar Consultoria</a></button>
-                </td>
-            </tr>
-            <tr>
-                <td>14:00</td>
-                <td>Maria Joana</td>
-                <td>R$ 180,00</td>
-                <td>
-                    <a href="#" button class="btn btn-warning" type="button">Iniciar Consultoria</a></button>
-                </td>
-                <td>
-                    <a href="#" button class="btn btn-dark" type="button">Cancelar Consultoria</a></button>
-                </td>
-            </tr>
+        <tbody id="agendaBody">
         </tbody>
     </table>
 
-<footer>
-    <img src="images/logo.png" alt="">
-</footer>
+    <div class="modal fade" id="cancelarModal" tabindex="-1" aria-labelledby="cancelarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelarModalLabel">Cancelar Consulta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A consulta foi cancelada. Um e-mail será enviado ao cliente avisando, juntamente com o estorno.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmarModal" tabindex="-1" aria-labelledby="confirmarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmarModalLabel">Consulta Confirmada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Consulta confirmada.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="indisponibilizarModal" tabindex="-1" aria-labelledby="indisponibilizarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="indisponibilizarModalLabel">Indisponibilizar Horário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Esse horário agora aparecerá como indisponível.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tbody = document.getElementById('agendaBody');
+        var horarios = [
+            { hora: '08:00', cliente: 'Julia', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '08:30', cliente: 'Maria', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '09:00', cliente: '-', valor: 'R$ 00,00', status: 'Horário Disponível', opcoes: '<button class="btn btn-dark" onclick="showModal(\'indisponibilizarModal\')">Indisponibilizar horário</button>' },
+            { hora: '09:30', cliente: 'João', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '10:00', cliente: 'Ana', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '10:30', cliente: 'Carlos', valor: 'R$ 180,00', status: 'Horário Disponível', opcoes: '<button class="btn btn-dark" onclick="showModal(\'indisponibilizarModal\')">Indisponibilizar horário</button>' },
+            { hora: '11:00', cliente: 'Mariana', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '11:30', cliente: 'Rafael', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '12:00', cliente: '-', valor: 'R$ 00,00', status: 'Horário Disponível', opcoes: '<button class="btn btn-dark" onclick="showModal(\'indisponibilizarModal\')">Indisponibilizar horário</button>' },
+            { hora: '12:30', cliente: 'Isabel', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '13:00', cliente: 'Pedro', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '13:30', cliente: 'Fernanda', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '14:00', cliente: 'Lucas', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '14:30', cliente: 'Gabriela', valor: 'R$ 180,00', status: 'Horário Disponível', opcoes: '<button class="btn btn-dark" onclick="showModal(\'indisponibilizarModal\')">Indisponibilizar horário</button>' },
+            { hora: '15:00', cliente: 'Marcos', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '15:30', cliente: 'Juliana', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '16:00', cliente: '-', valor: 'R$ 00,00', status: 'Horário Disponível', opcoes: '<button class="btn btn-dark" onclick="showModal(\'indisponibilizarModal\')">Indisponibilizar horário</button>' },
+            { hora: '16:30', cliente: 'Roberto', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '17:00', cliente: 'Renata', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '17:30', cliente: 'Gustavo', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '18:00', cliente: 'Laura', valor: 'R$ 180,00', status: 'Horário Disponível', opcoes: '<button class="btn btn-dark" onclick="showModal(\'indisponibilizarModal\')">Indisponibilizar horário</button>' },
+            { hora: '18:30', cliente: 'Felipe', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '19:00', cliente: 'Eduarda', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '19:30', cliente: 'Henrique', valor: 'R$ 180,00', status: 'Consulta Confirmada', opcoes: '<button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' },
+            { hora: '20:00', cliente: 'Camila', valor: 'R$ 180,00', status: 'Consulta à Confirmar', opcoes: '<button class="btn btn-success" onclick="showModal(\'confirmarModal\')">Confirmar</button> <button class="btn btn-warning" onclick="showModal(\'cancelarModal\')">Cancelar</button>' }
+            ];
+
+        for (var i = 0; i < horarios.length; i++) {
+            var row = '<tr>' +
+                '<td>' + horarios[i].hora + '</td>' +
+                '<td>' + horarios[i].cliente + '</td>' +
+                '<td>' + horarios[i].valor + '</td>' +
+                '<td>' + horarios[i].status + '</td>' +
+                '<td>' + horarios[i].opcoes + '</td>' +
+                '</tr>';
+
+            tbody.innerHTML += row;
+        }
+
+        function showModal(modalId) {
+            var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
+            myModal.show();
+        }
+    </script>
 </body>
 </html>
